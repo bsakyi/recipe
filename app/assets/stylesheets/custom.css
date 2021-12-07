@@ -1,0 +1,91 @@
+.center {
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+    line-height:1;
+}
+
+h1{
+    font-size: 3em;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+h2{
+    font-size: 1.2em;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: normal;
+    color: #777;
+}
+
+.left {
+    text-align: left;
+    letter-spacing: .2px;
+}
+
+
+
+
+.footer{
+    margin-top: 25px;
+    border-top: 1px solid #eaeaea;
+    color:#777;
+    
+}
+
+
+
+
+/* .display-4{
+    text-align: center;
+}
+
+.my-4{
+    text-align: center;
+}
+
+.lead{
+    text-align: center;
+}
+
+.jumbo-btn {
+    horizontal 
+} */
+
+/* .navbar-default-bg{
+    color: #312312;
+}
+
+.light-orange {
+    color:default;
+}
+
+#logo {
+    margin: 10px 10px 10px 10px;
+    float: left;
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding-top: 9px;
+    font-weight: bold;
+}
+
+#logo:hover {
+    color: white;
+    text-decoration:none ;
+}
+
+body {
+    padding-top: 0px;
+}
+
+.nav-item {
+    margin-left: 25px;
+    float: left;
+    margin-top: 0px;
+} */
