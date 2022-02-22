@@ -21,7 +21,7 @@ class ChefTest < ActiveSupport::TestCase
 	end
 
 	test "chefname should not be too short" do 
-		@chef.chefname = "aa" 
+		@chef.chefname = "as" 
 		assert_not @chef.valid?
 	end	
 
