@@ -26,7 +26,7 @@ class RecipeTest < ActiveSupport::TestCase
         @recipe.name = "a" *101
         assert_not @recipe.valid?
     end 
-
+.
     test "name length should not be too short" do 
         @recipe.name = "aaaa"
         assert_not @recipe.valid?
