@@ -1,26 +1,34 @@
-<p>All recipes</p>
+<%= render 'shared/page_title', title: "All Recipes" %>
 
-</hr>
-
+ 
 <% @recipes.each do |recipe| %>
-    <div class ="row >
-
-        <div class="col-md-2">
-            <section class="chef_info center">
-                <%= gravatar_for recipe.chef, size: 100  %>
-                <h5>Chef name: <%= recipe.chef.chefname %></h5>
-            </section>
-        </div>
-
-        <div class="col-lg-8 well">
-            <h4> <%= link_to recipe.name, recipe_path(recipe) %> </h4>
-            <p><%= recipe.summary %></p>
-            <p>
-                <span class='quiet'><small> <%= time_ago_in_words(recipe.created_at) %> </small></span>
-            </p>
-            <hr>
-        </div>
-    </div>
-    <% end %> 
+    
+    <% if false %>
+<div class="card" style="width: 18rem;">
+  <%= gravatar_for recipe.chef, size: 70, class:"card-img-top"  %>
+  <div class="card-body">
+    <h5 class="card-title">Chef name: <%= recipe.chef.chefname %> </h5>
+    <p class="card-text"> <%= recipe.summary %> </p>
+    <a><%= link_to recipe.name, recipe_path(recipe), class:"btn btn-primary" %></a>
+    <p><span class='quiet'><small> <%= time_ago_in_words(recipe.created_at) %> </small></span></p>
+  </div>
+</div>
+<% end %>
 
 
+<div class="card text-center pt-10 ">
+  <div class="card-header">
+   Chef name: <%= recipe.chef.chefname %>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"> <%= recipe.name.upcase %> </h5>
+    <%= gravatar_for recipe.chef, size: 100, class:"card-img-top"  %>
+    <p class="card-text"> <%= recipe.summary %> </p>
+    <a><%= link_to recipe.name.titleize, recipe_path(recipe), class:"btn btn-primary" %></a>
+  </div>
+  <div class="card-footer text-muted mb-30 pb-30">
+    <small> <%= time_ago_in_words(recipe.created_at) %> </small>
+  </div>
+</div>
+<br>
+<% end %>
