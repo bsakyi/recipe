@@ -3,14 +3,12 @@
 </hr>
 
 <% @recipes.each do |recipe| %>
-    <div class ="row">
+    <div class ="row >
 
         <div class="col-md-2">
             <section class="chef_info center">
                 <%= gravatar_for recipe.chef, size: 100  %>
                 <h5>Chef name: <%= recipe.chef.chefname %></h5>
-
-
             </section>
         </div>
 
@@ -20,7 +18,9 @@
             <p>
                 <span class='quiet'><small> <%= time_ago_in_words(recipe.created_at) %> </small></span>
             </p>
+            <hr>
         </div>
     </div>
-<% end %> 
-<hr/>
+    <% end %> 
+
+
