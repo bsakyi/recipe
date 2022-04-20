@@ -60,6 +60,24 @@ input, textarea, select, .uneditable-input {
 input {
     height: auto !important;
 }
+
+span.picture {
+    margin-top: 10px;
+    /* input {
+        border: 0;
+    }  */
+}
+
+.show_recipe {
+    margin: 10px 10px 10px;
+}
+
+.resize-recipe img {
+    padding-top: 53px;
+    object-fit: contain;
+    max-height: 320px;
+    max-width: 400px;
+}
 /* .display-4{
     text-align: center;
 }

@@ -12,6 +12,10 @@ get '/home' => 'pages#home'
 #get 'recipes/:id', to: 'recipes#show', as: 'recipe'
 #delete 'recipe/:id', to: 'recipes#destroy'
 
-resources :recipes
+resources :recipes do 
+  member do 
+    post 'like'
+  end 
+end 
 
 end
