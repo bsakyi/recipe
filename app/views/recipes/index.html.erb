@@ -1,6 +1,6 @@
 <%= render 'shared/page_title', title: "All Recipes" %>
 
- 
+ <%= will_paginate%>
 <% @recipes.each do |recipe| %>
     
 <% if false %>
@@ -37,7 +37,8 @@
       <% end %>
      </div>
     <div class="card-footer text-muted mb-30 pb-30">
-        <small> <%= time_ago_in_words(recipe.created_at) %> </small>
+        <small> Created: <%= time_ago_in_words(recipe.created_at) %> ago, </small>
+        <small> Updated: <%= time_ago_in_words(recipe.updated_at) %> ago </small>
     </div>
     </div>
   </div>
@@ -49,3 +50,5 @@
  
 <br>
 <% end %>
+
+<%= will_paginate %>

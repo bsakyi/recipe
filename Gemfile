@@ -31,7 +31,9 @@ gem "pry"
 gem 'carrierwave', '~> 2.2', '>= 2.2.2'
 #for modifying uploaded images
 gem 'mini_magick', '~> 4.11'
-
+#paginate gem
+gem 'will_paginate', '~> 3.1', '>= 3.1.7'
+gem 'bootstrap-will_paginate', '~> 1.0'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
