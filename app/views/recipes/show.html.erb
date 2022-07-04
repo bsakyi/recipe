@@ -27,7 +27,10 @@
 
             <%= link_to like_recipe_path(@recipe, like: false), method: :post  do %>
                 <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>&nbsp <%= @recipe.thumbs_down_total %>
-            <% end %>
+                
+                <% end %>
+                <p>Try <i class="fa-solid fa-thumbs-up"></i></p>
+                <p>Angry <i class="fas fa-angry"></i></p>
         </div>
     </div>
   </div>
