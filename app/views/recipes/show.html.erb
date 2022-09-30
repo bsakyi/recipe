@@ -6,7 +6,7 @@
     <div class="col-md-4 pull-right center">
         <%= gravatar_for @recipe.chef, size:200 %>
         <p>
-            <h5>Brought to you by: <%= @recipe.chef.chefname %> </h5>
+            <h5>Brought to you by: <%= link_to @recipe.chef.chefname, @recipe.chef %> </h5>
         </p>
     </div>
   <div class="col-md-8">
@@ -29,8 +29,7 @@
                 <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>&nbsp <%= @recipe.thumbs_down_total %>
                 
                 <% end %>
-                <p>Try <i class="fa-solid fa-thumbs-up"></i></p>
-                <p>Angry <i class="fas fa-angry"></i></p>
+               
         </div>
     </div>
   </div>

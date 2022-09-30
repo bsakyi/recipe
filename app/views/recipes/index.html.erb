@@ -17,13 +17,15 @@
 
 <div class="row" >
   <div class="col-md-10">
+
+    
   <div class="card text-center pt-10 ">
     <div class="card-header">
     Chef name: <%= recipe.chef.chefname %>
     </div>
     <div class="card-body">
       <h5 class="card-title"> <%= recipe.name.upcase %> </h5>
-      <%= gravatar_for recipe.chef, size: 100, class:"card-img-top"  %>
+      <%= link_to gravatar_for(recipe.chef, size: 100), chef_path(recipe.chef), class:"card-img-top"  %>
       <p class="card-text"> <%= recipe.summary %> </p>
       <a><%= link_to recipe.name.titleize, recipe_path(recipe), class:"btn btn-primary" %></a>
     </div>

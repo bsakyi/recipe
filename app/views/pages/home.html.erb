@@ -3,7 +3,8 @@
 <p class="lead">This is a Recipe APP...Enjoy.</p>
 <hr class="my-4">
 <p class="lead">Built with Ruby on Rails.</p>
-<a class="jumbo-btn btn btn-primary btn-lg" href="#" role="button">Sign Up Now</a>
+
+<%= link_to 'Sign Up Now', register_path, role:"button", class:"jumbo-btn btn btn-primary btn-lg" %>
 </div>
 
 <div class="row">
@@ -17,10 +18,11 @@
 
     <div class="col-lg-4">
         <h3 class="midrow">
-            View Recipes as Guest User
+    
+            Sign in to your Account
         </h3>
-        <h5 class="left">Browse and view recipes as a guest and Sign up later</h5>
-        <p><%= link_to "Browse Recipe Listings",recipes_path, class: "btn btn-warning btn-small" %> </p>
+        <h5 class="left">Add/Update your recipes/create reviews and much more</h5>
+        <p><%= link_to "Log In to your account", login_path, class: "btn btn-warning btn-small" %> </p>
     </div>
 
     <div class="col-lg-4">
