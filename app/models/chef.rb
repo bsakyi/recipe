@@ -1,4 +1,6 @@
+require 'bcrypt'
 class Chef < ActiveRecord::Base 
+	include BCrypt
 	has_many :recipes 
 	has_many :likes
 	before_save { self.email = email.downcase}
@@ -9,5 +11,4 @@ class Chef < ActiveRecord::Base
  										format: { with: VALID_EMAIL_REGEX }
 	has_secure_password
 end 
- 
  

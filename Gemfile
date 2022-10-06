@@ -34,8 +34,8 @@ gem 'mini_magick', '~> 4.11'
 #paginate gem
 gem 'will_paginate', '~> 3.1', '>= 3.1.7'
 gem 'bootstrap-will_paginate', '~> 1.0'
-
-gem 'bcrypt', '~> 3.1', '>= 3.1.12'
+gem 'bcrypt', '~> 3.1', '>= 3.1.18'
+#gem 'bcrypt', '~> 3.1', '>= 3.1.12'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
